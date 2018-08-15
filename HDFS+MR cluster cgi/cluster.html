@@ -1,0 +1,88 @@
+<form action="cgi-bin/cluster1.py">
+<ul type="none">
+<li>Enter your IP address<input type="text" name="ip"></li>
+<li>Enter your Password<input type="password" name="pswd"></li>
+<br />
+
+
+<ul>
+<b>Hadoop installation</b><br />
+Do you want to install hadoop ion your system?
+<li><input type="radio" name="install" value="yes">Yes</li>
+<li><input type="radio" name="install" value="no">No</li>
+</ul>
+
+<br />
+<ul><b>HDFS Cluster</b>
+<li>Enter folder name<input type="text" name="fldr"></li>
+<li>
+Is this a new cluster?
+<ul type="disc">
+<li><input type="radio" name="formt" value="yes">Yes
+</li>
+<li>
+<input type="radio" name="formt" value="no">No
+</li>
+</ul>
+</li>
+<li>
+Configure Files?
+<ul type="disc">
+<li><input type="radio" name="conf" value="yes">Yes
+</li>
+<li>
+<input type="radio" name="conf" value="no">No
+</li>
+</ul>
+</li>
+<li>
+Select type of node:
+<ul type="disc">
+<li><input type="radio" name="choice" value="master">Name Node</li>
+<li><input type="radio" name="choice" value="slave">Data Node</li>
+</li>
+</ul>
+</ul>
+
+
+<br />
+<ul><b>Map Reduce Cluster</b>
+<li>
+Configure Files?
+<ul type="disc">
+<li><input type="radio" name="confmr" value="yes">Yes
+</li>
+<li>
+<input type="radio" name="confmr" value="no">No
+</li>
+</ul>
+</li>
+<li>
+Select type of node:
+<ul type="disc">
+<li><input type="radio" name="choicemr" value="master">Job Tracker</li>
+<li><input type="radio" name="choicemr" value="slave">Task Tracker</li>
+</ul>
+
+
+<li>
+<input type="radio" name="choice" value="client">Client Node
+</li>
+
+<li>
+<br />
+(Enter the following in case of config requirements)
+<br />
+<small>
+Enter IP of master<input type="text" name="mas">
+</small>
+<br />
+<small>
+Enter IP of jobtracker<input type="text" name="jt">
+</small>
+</li>
+</ul>
+<input type="submit"/>
+<br />
+<a href=../filehandler.html>Click here to upload/delete/view files</a><br />
+</form>

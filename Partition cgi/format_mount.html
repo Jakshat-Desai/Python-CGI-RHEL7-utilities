@@ -1,0 +1,41 @@
+<form action="cgi-bin/format_mount.py">
+<ul type="none">
+<li>Enter your ip:<input type="text" name="ip" /></li>
+<li>Enter your password:<input type="password" name="pswd" /></li>
+<br />
+<li>Enter the name of your partition:<input type="text" name="part"></li>
+<br />Do you wanna mount/unmount?
+<ul>
+<li><input type="radio" name="opt" value="mount">Mount/format</li>
+<li><input type="radio" name="opt" value="umount">Unmount</li>
+</ul>
+THE FOLLOWING OPTIONS ARE TO BE FILLED ONLY IF YOU WANT TO MOUNT AND/OR FORMAT
+<li>Enter your format type:
+<ul>
+<li><input type="radio" name="format" value="ext4">.ext4</li>
+<li><input type="radio" name="format" value="ext3">.ext3</li>
+<li><input type="radio" name="format" value="ext2">.ext2</li>
+<li><input type="radio" name="format" value="fat">.fat</li>
+<li><input type="radio" name="format" value="vfat">.vfat</li>
+<li><input type="radio" name="format" value="none">Dont format</li>
+</ul>
+</li>
+<li>
+Where do you wanna mount?
+<ul>
+<li><input type="radio" name="loc" value="none">Dont mount</li>
+<li><input type="radio" name="loc" value="desktop">Desktop</li>
+<li><input type="radio" name="loc" value="addr">Enter your own address:<br/>
+<small>
+<input type="text" name="own"/>
+</small>
+</li>
+</ul>
+</li>
+<li>
+Enter a name for your drive:<input type="text" name="drive">
+</li>
+</ul>
+<input type="submit" /><br />
+<a href="partitions.html">Click here to insert/view/delete partitions</a>
+</form>

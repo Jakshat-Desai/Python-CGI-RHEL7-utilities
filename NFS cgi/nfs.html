@@ -1,0 +1,25 @@
+<form action="cgi-bin/nfs.py">
+<ul>
+<li>Enter your ip:<input type='text' name='ip' /></li>
+<li>Enter your password:<input type='passwd' name='passwd' /></li>
+<li>Enter your choice:<br />
+<ul>
+<li>
+<input type="radio" name="choice" value='server'>NFS server
+<ul>
+<li>Enter the location of the file/folder to be shared<input type="text" name="fileAdd"></li>
+</ul>
+</li>
+<li>
+<input type="radio" name="choice" value='client'>NFS client
+<ul>
+<li>Enter the IP of nfs server<input type="text" name="serve"></li>
+<li>Enter the location of the file/folder shared by nfs<input type="text" name="folder"></li>
+<li>Enter mount location<input type="text" name="mount"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<input type="submit" />
+</form>

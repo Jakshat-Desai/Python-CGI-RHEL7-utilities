@@ -1,0 +1,43 @@
+<form action="cgi-bin/partitions.py">
+Enter the following:
+<ul>
+<li>IP:<input type="text" name="ip"></li>
+<li>Password:<input type="password" name="pswd"></li>
+<li>Drive name:<input type="text" name="drive"></li>
+</ul>
+<br />
+Choose your command:
+<ul type="circle">
+<li>
+<input type="radio" name="command" value="p" />View partition table
+</li>
+<li>
+<input type="radio" name="command" value="n" />Create new partition
+</li>
+<li>
+<input type="radio" name="command" value="d" />Delete a partition
+</li>
+</ul>
+<br />
+For new partition only:
+<ul>
+<li>Enter partition type:
+<ul type="circle">
+<li>
+<input type="radio" name="part_type" value="p" />Primary
+</li>
+<li>
+<input type="radio" name="part_type" value="e" />Extended
+</li>
+</ul>
+</li>
+<li>Enter partition size(G=Gib,M=Mib,K=Kib):<input type="text" name="fin_sec"></li>
+</ul>
+For deleting partition only:
+<ul>
+<li>Enter partition number:<input type="text" name="part_no"></li>
+</ul>
+<br />
+<input type="submit"><br />
+<a href="format_mount.html">Click here to format and/or mount partitions</a>
+</form>

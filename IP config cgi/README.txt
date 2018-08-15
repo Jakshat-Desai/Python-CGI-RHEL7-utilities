@@ -1,0 +1,1 @@
+The given programme can be used to conviniently switch from static ip to dhcp and vice versa. It can also be used to enable and disable ip forwarding. Note that after submitting the page the page will show that it is unable to connect o the network. This is on account of restarting the network service( or changing the ip). However the programme would still have done its job.

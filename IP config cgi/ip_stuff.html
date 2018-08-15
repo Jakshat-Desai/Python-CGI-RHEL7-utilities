@@ -1,0 +1,28 @@
+<form action="cgi-bin/ip_stuff.py">
+<ul type="none">
+<li>Enter your IP:<input type="text" name="ip"></li>
+<li>Enter your password:<input type="password" name="pswd"></li>
+<li>
+Enter your choice:
+<ul>
+<li><input type="radio" name="choice" value="dhcp">DHCP</li>
+<li><input type="radio" name="choice" value="static">Static</li>
+</ul>
+<br />
+Check to enable ip forwarding and uncheck to disable it<input type="checkbox" name="forward">
+</li>
+<li>
+<br />
+Enter the following details if you selected static ip:
+<ul>
+<li>Enter your static IP:<input type="text" name="stat"></li>
+<li>Enter your Netmask:<input type="text" name="net"></li>
+<li>Enter your Gateway:<input type="text" name="gate"></li>
+<li>Enter DNS1(mandatory):<input type="text" name="dns1"></li>
+<li>Enter DNS2(if any):<input type="text" name="dns2"></li>
+<li>Enter DNS3(if any):<input type="text" name="dns3"></li>
+</ul>
+<input type="submit">
+</li>
+</ul>
+</form>
